@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--====== Metadatos ==========-->
+  <meta charset="UTF-8">
+  <meta name="author" content="Isai Hernandez">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--====== Bootstrap ==========-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!--========== CSS ==============-->
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <!-- ================ Título ================-->
+  <title>Espejuelos Graduados</title>
+  <!-- ================ Favicon ================-->
+  <link rel="icon" type="image/x-ico" href="../img/favicon.ico">
+</head>
+<body>
+  <!--============== BARRA DE NAVEGACIÓN ==================-->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container py-2 border-bottom">
+      <a class="navbar-brand font-title px-1" href="https://ventanimia.github.io/index.html">
+        <img src="../img/favicon.ico" width="40" height="35" alt="Logo"> VENTANIMIA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active px-3 link-secondary" aria-current="page"
+              href="https://ventanimia.github.io">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="../pages/contact.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="#">Servicio de Reparación</a>
+          </li>
+          <li class="nav-item"> <!--===== Carro de compras ====-->
+            <a class="nav-link px-3" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart3 c"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- ====== BREADCRUMB ====== -->
+    <div class="container my-5 mb-0 py-5 pb-0">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb-chevron pb-0">
+          <li class="breadcrumb-item">
+            <a class="link-body-emphasis fw-semibold text-decoration-none"
+              href="https://ventanimia.github.io">Inicio</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="link-body-emphasis fw-semibold text-decoration-none" href="../pages/products.html">Productos</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Espejuelos Graduados
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <!--========================= DESCRIPCIÓN DEL PRODUCTO ======================================-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-6">
+          <img class="product-image" id="main-image" src="/assets/img/dark_glasses.png" alt="Imagen principal">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-3">
+              <img class="product-image color" src="/assets/img/dark_glasses.png" alt="Imagen2"
+                onclick="cambiarImagen('/assets/img/dark_glasses.png', this)">
+            </div>
+            <div class="col-3">
+              <img class="product-image color" src="/assets/img/blue_glasses.png" alt="Imagen1"
+                onclick="cambiarImagen('/assets/img/blue_glasses.png', this)">
+            </div>
+            <div class="col-3">
+              <img class="product-image color" src="/assets/img/brown_glasses.png" alt="Imagen2"
+                onclick="cambiarImagen('/assets/img/brown_glasses.png', this)">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h2 class="details">Espejuelos Graduados</h2>
+          <div class="row border-bottom">
+            <p class="d-product">
+              Dioptría: <b>+1.50 hasta +4.00</b>
+              Colores: Negro, Azul, Rojo
+              Material: Plástico
+              Edad: Unisex
+              Público objetivo: Adultos
+              Gafas Estilo: Cuadrado
+              Unidades: 1<br>
+              <strong class="longitud">Dimensiones:</strong>
+              Ancho total: 134 mm
+              Ancho de la lente: 52 mm
+              Ancho del puente de la nariz: 16 mm.
+              Longitud de la armadura: 138 mm
+              Altura de la lente: 38 mm
+            </p>
+          </div>
+          <div class="d-price">
+          <button class="buy-button btn" type="submit">Agregar</button>$700
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--=============== FOOTER =================== -->
+  <footer>
+    <div class="container border-top">
+      <div class="row">
+        <div class="col-sm-6">
+          <p> Copyright &copy; 2023 Ventanimia</p>
+        </div>
+        <div class="col-sm-6">
+          <ul>
+            <li> <!--===== Red Social Whatsapp ====-->
+              <a target="_blank"
+                href="https://api.whatsapp.com/send?text=¡Echa un vistazo a los productos de esta tienda! https://ventanimia.github.io">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                  class="bi bi-whatsapp w" viewBox="0 0 16 16">
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                </svg>
+              </a>
+            </li>
+            <li> <!--===== Red Social Facebook ====-->
+              <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://ventanimia.github.io">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                  class="bi bi-facebook f" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                </svg>
+              </a>
+            <li> <!--===== Red Social Telegram ====-->
+              <a target="_blank"
+                href="https://telegram.me/share/url?url=https://ventanimia.github.io/&text=¡Echa un vistazo a los productos de esta tienda!">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                  class="bi bi-telegram t" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z" />
+                </svg>
+              </a>
+            </li>
+            <li> <!--===== Correo Electrónico ====-->
+              <a target="_blank" href="mailto:ventanimia@gmail.com">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                  class="bi bi-envelope-at e" viewBox="0 0 16 16">
+                  <path
+                    d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                  <path
+                    d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="../js/animate.js"></script>
+</body>
+</html>

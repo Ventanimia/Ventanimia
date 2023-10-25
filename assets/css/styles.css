@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Tenor+Sans&family=Victor+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #666666;
+}
+
+/* ========== BARRA DE NAVEGACIÓN ========== */
+.font-title {
+  font-family: 'Tenor Sans', sans-serif;
+  align-items: center; 
+}
+
+.navbar {
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+} 
+
+/* =================== BREADCRUMB ================= */
+.breadcrumb-chevron {
+  --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236c757d'%3E%3Cpath fill-rule='evenodd' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+  gap: .5rem;
+  margin-bottom: 0px;
+}
+
+/* ===================== CARRUSEL =================== */
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .carousel img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+ /* filter: brightness(0.6); Opacidad de la imagen en el carrusel */
+  }
+}
+
+/* =================== CATEGORÍAS =================== */
+.cat {
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.category {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.circle {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  margin: 40px 40px 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.4s;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+}
+
+.circle-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+
+.text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 3;
+}
+
+/* =============== PRODUCTOS ================= */
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.product {
+  width: 220px;
+  margin: 15px;
+  color: #666666;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-top-width: 0px;
+  border-top-style: solid;
+  cursor: pointer;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12), 0px 6px 8px -12px rgba(24, 39, 75, 0.8); 
+}
+
+.product:hover {
+  transform: scale(1); /* Aumenta ligeramente el tamaño cuando se pasa el cursor */
+  box-shadow: 0px 8px 16px -6px rgba(24, 39, 75, 0.8); /* Agrega una sombra más pronunciada al pasar el cursor */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Aplica una transición suave */
+}
+
+.product-img {
+  width: 160px;
+}
+
+.pn {
+  font-size: 20px;
+  margin-top: 5px;
+  font-family: 'Georgia', sans-serif;
+
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight:700;
+  line-height: 3.0rem;
+  color: #666666;
+  font-family: 'Georgia', sans-serif;
+}
+
+/* =================== FOOTER ==================== */
+footer {
+  padding: 15px;
+  color: #5c5757;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+
+.border-top {
+  padding-top: 15px;
+} 
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  color: rgba(33, 37, 41, 0.75);
+}
+
+footer ul li {
+  padding: 3px 10px;
+}
+/* =================== CENTRAR EL FOOTER EN LOS MÓVILES =================== */
+@media screen and (max-width: 576px) {
+  footer {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer ul {
+    justify-content: center;
+  }
+}
+
+/* ============== COLORES DE LOS SVG SOCIALS ICONS ================== */
+.w:hover {
+  text-decoration: none;
+  border-radius: 50px;
+  color: #fff;
+  background-color: #25d366;
+}
+
+.f:hover {
+  text-decoration: none;
+  border-radius: 50px;
+  color: #3b5998;
+  background-color: #fff;
+}
+
+.t:hover {
+  text-decoration: none;
+  border-radius: 50px;
+  color: #2aabee;
+  background-color: #fff;
+}
+
+.e:hover {
+  text-decoration: none;
+  color: #DB4437;
+  background-color: #fff;
+}
+
+.c:hover {
+  text-decoration: none;
+  color: #28A745;
+  background-color: #fff;
+}
+
+.pho:hover {
+  text-decoration: none;
+  color: #28A745;
+  background-color: #fff;
+}
+/* ============== DESCRIPCIÓN DEL PRODUCTO ============= */
+.product-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.color:hover {
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño cuando se pasa el cursor */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Aplica una transición suave */
+}
+
+.details {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-left: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #414141;
+}
+
+.d-product {
+  padding-left: 35px;
+  font-size: 16px;
+  line-height: 26px;
+  white-space: pre-line;
+}
+
+b{
+  color: #616161;
+}
+
+.longitud {
+  color: #414141;
+}
+
+.d-price {
+  text-align: right;
+  padding: 20px;
+  color: #414141;
+  font-family: 'Georgia', sans-serif;
+  font-size: 2.0rem;
+  font-weight: 700;
+  line-height: 3.0rem;
+}
+
+.buy-button {
+  background-color: #28A745;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  float: left;
+}
+
+.buy-button:hover {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+/* ================  CONTACTO  =============== */
+.display-4 {
+  text-align: center;
+}
+
+small ul {
+  list-style: none;
+  display: flex;
+  color: rgba(33, 37, 41, 0.75);
+  padding-left: 0;
+}
+
+small ul li {
+  padding: 3px 10px;
+}
+
+@media (min-width: 992px) {
+  .img-bottom-right {
+  width: 100%;
+  height: 500px;
+  object-fit: scale-down;
+  }
+}
+
+@media (max-width: 992px) {
+  .img-bottom-right {
+    display: none;
+  }
+}
